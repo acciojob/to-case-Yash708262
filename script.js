@@ -1,13 +1,10 @@
 function toCase(text) {
-  // write your code herefunction toCase(str) {
-  if (str === "") {
-    return "-";  // ✅ requirement ke mutabiq
+  if (text === "") {
+    return "-";
   }
-  return str.toLowerCase() + "-" + str.toUpperCase();
-}
+  return text.toLowerCase() + "-" + text.toUpperCase();
 }
 
 // DO not change the code below
-
 const text = prompt("Enter text:");
 alert(toCase(text));
